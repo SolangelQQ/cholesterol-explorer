@@ -1,8 +1,8 @@
 from flask import Flask, jsonify
-from flask_cors import CORS  # Importa la extensión
+from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Habilita CORS para toda la aplicación
+CORS(app)
 
 @app.route('/')
 def hello_world():
