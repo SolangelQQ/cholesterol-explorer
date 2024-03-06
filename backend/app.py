@@ -41,8 +41,8 @@ def hello_world():
 def sumar():
     try:
         data = request.get_json()
-        tf = float(data.get('tf', 0))  # Si 'num1' no está presente, establecerlo a 0
-        presente = float(data.get('presente', 0))  # Si 'num2' no está presente, establecerlo a 0
+        tf = float(data.get('tf', 0))
+        presente = float(data.get('presente', 0))
 
         t0 = 0
         cn = 200
@@ -50,9 +50,6 @@ def sumar():
         k2 = 0.1
         E = 400
         dt = 0.01
-
-        # resultado = euler(t0, tf, presente, colesterol, dt, cn, k1, k2, E)
-        # return jsonify(resultado=resultado)
 
         tiempos, futuros = euler(t0, tf, presente, colesterol, dt, cn, k1, k2, E)
         resultado = {'tiempos': tiempos.tolist(), 'futuros': futuros.tolist()}

@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const tf = parseFloat(document.getElementById('tf').value);
         const presente = parseFloat(document.getElementById('presente').value);
 
-        sumar(tf, presente);
+        predecir_colesterol(tf, presente);
     });
 });
 
-function sumar(tf, presente) {
+function predecir_colesterol(tf, presente) {
     fetch('http://localhost:5000/sumar', {
         method: 'POST',
         headers: {
@@ -23,7 +23,41 @@ function sumar(tf, presente) {
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById('result').innerText = `Tiempos: ${data.resultado.tiempos.join(', ')}\nFuturos: ${data.resultado.futuros.join(', ')}`;
+        drawChart(data.resultado.tiempos, data.resultado.futuros);
     })
     .catch(error => console.error('Error al conectar con el backend:', error));
 }
+
+function drawChart(tiempos, futuros) {
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: tiempos,
+            datasets: [{
+                label: 'Futuros',
+                data: futuros,
+                borderColor: 'rgb(75, 192, 192)',
+                borderWidth: 2,
+                fill: false,
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    type: 'linear',
+                    position: 'bottom'
+                },
+                y: {
+                    type: 'linear',
+                    position: 'left'
+                }
+            }
+        }
+    });
+}
+
+
