@@ -4,29 +4,26 @@ document.addEventListener('DOMContentLoaded', () => {
     calculatorForm.addEventListener('submit', (event) => {
         event.preventDefault();
 
-        const num1 = parseFloat(document.getElementById('num1').value);
-        const num2 = parseFloat(document.getElementById('num2').value);
+        const tf = parseFloat(document.getElementById('tf').value);
+        const presente = parseFloat(document.getElementById('presente').value);
 
-        console.log("num1:", num1);
-        console.log("num2:", num2);
-
-        sumar(num1, num2);
+        sumar(tf, presente);
     });
 });
 
-function sumar(num1, num2) {
+function sumar(tf, presente) {
     fetch('http://localhost:5000/sumar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ num1, num2 }),
+        body: JSON.stringify({ tf, presente }),
         mode: 'cors',
         credentials: 'same-origin',
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById('result').innerText = `Resultado: ${data.resultado}`;
+        document.getElementById('result').innerText = `Tiempos: ${data.resultado.tiempos.join(', ')}\nFuturos: ${data.resultado.futuros.join(', ')}`;
     })
     .catch(error => console.error('Error al conectar con el backend:', error));
 }
