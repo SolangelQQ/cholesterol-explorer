@@ -1,0 +1,96 @@
+.profile-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.personal-info {
+    flex: 1;
+}
+
+.personal-info h1 {
+    margin: 0 0 10px;
+}
+
+.personal-info p {
+    margin: 5px 0;
+}
+
+.health-metrics {
+    margin-bottom: 20px;
+}
+
+.summary-goals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary, .goals {
+    width: 48%;
+}
+
+.summary h2, .goals h2 {
+    margin-top: 0;
+}
+
+#contenido-informacion {
+    display: flex;
+    flex-direction: row;
+    height: 89vh;
+    width: 100%;
+}
+
+#columna-1 {
+    width: 65%;
+    padding: 1.5rem;
+}
+
+
+#columna-2 {
+    width: 35%;
+}
+
+.health-metrics {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.summary {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin: 1.5rem;
+    width: 75%;
+    padding: 1.5rem;
+}
+
+.goals{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    width: 75%;
+}
+
+#perfil {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+    height: 10rem;
+}

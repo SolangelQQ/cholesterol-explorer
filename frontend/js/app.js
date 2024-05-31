@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function predecir_colesterol(tf, presente) {
-    fetch('http://localhost:5000/sumar', {
+    fetch('http://localhost:5000/calculate-cholesterol', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
