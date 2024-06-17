@@ -1,7 +1,6 @@
 Flask
 flask_cors
 google-generativeai
-face_recognition
 Pillow
 dash
 pandas
