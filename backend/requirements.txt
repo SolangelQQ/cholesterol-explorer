@@ -2,13 +2,10 @@ Flask
 flask_cors
 google-generativeai
 face_recognition
-PIL
-json
+Pillow
 dash
 pandas
 plotly
 numpy
 PyPDF2
-logging
 tensorflow
-Pillow
