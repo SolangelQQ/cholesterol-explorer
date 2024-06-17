@@ -1,0 +1,130 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "admin123",
+            "profile": {
+                "name": "Pedro",
+                "age": "35",
+                "gender": "male",
+                "height": "175",
+                "weight": "70",
+                "goals": [
+                    {
+                        "exercise": "Running",
+                        "amount": "5 km/day"
+                    },
+                    {
+                        "exercise": "Cycling",
+                        "amount": "10 km/day"
+                    }
+                ],
+                "healthGoal": "To lower LDL cholesterol levels and achieve a healthy weight.",
+                "healthData": {
+                    "cholesterol": {
+                        "labels": [
+                            "Enero",
+                            "Febrero",
+                            "Marzo",
+                            "Abril",
+                            "Mayo",
+                            "Junio"
+                        ],
+                        "values": [
+                            130,
+                            125,
+                            120,
+                            115,
+                            110,
+                            105
+                        ]
+                    },
+                    "weight": {
+                        "labels": [
+                            "Enero",
+                            "Febrero",
+                            "Marzo",
+                            "Abril",
+                            "Mayo",
+                            "Junio"
+                        ],
+                        "values": [
+                            80,
+                            78,
+                            76,
+                            74,
+                            72,
+                            70
+                        ]
+                    }
+                },
+                "diet": "Balanced diet with focus on lean proteins and vegetables.",
+                "allergies": "None"
+            }
+        },
+        {
+            "username": "user",
+            "password": "user123",
+            "profile": {
+                "name": "Regular User",
+                "age": 30,
+                "gender": "female",
+                "height": 165,
+                "weight": 68,
+                "goals": [
+                    {
+                        "exercise": "Swimming",
+                        "amount": "30 minutes/day"
+                    },
+                    {
+                        "exercise": "Yoga",
+                        "amount": "1 hour/day"
+                    }
+                ],
+                "healthGoal": "To increase muscle mass while maintaining healthy cholesterol levels.",
+                "healthData": {
+                    "cholesterol": {
+                        "labels": [
+                            "Enero",
+                            "Febrero",
+                            "Marzo",
+                            "Abril",
+                            "Mayo",
+                            "Junio"
+                        ],
+                        "values": [
+                            140,
+                            135,
+                            130,
+                            125,
+                            120,
+                            115
+                        ]
+                    },
+                    "weight": {
+                        "labels": [
+                            "Enero",
+                            "Febrero",
+                            "Marzo",
+                            "Abril",
+                            "Mayo",
+                            "Junio"
+                        ],
+                        "values": [
+                            70,
+                            72,
+                            74,
+                            76,
+                            78,
+                            80
+                        ]
+                    }
+                },
+                "diet": "Vegetarian diet with supplements for protein intake.",
+                "allergies": [
+                    "Peanuts"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Colesterol</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    
+    <link rel="stylesheet" href="../css/food.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/default.css">
+</head>
+<body>
+
+    <div id="contenido">
+
+        <div id="menu-principal">
+            <div id="titulo-principal">
+                <h1>Cholesterol</h1>
+                <h1>Explorer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">INICIO</a></li>
+                    <li><a href="predict.html">PREDECIR</a></li>
+                    <li><a href="information.html">INFORMACION</a></li>
+                    <li><a href="food.html" id="activado">COMIDA</a></li>
+                    <li><a href="assistant.html">ASISTENTE</a></li>
+                    <li><a href="setting.html">AJUSTES</a></li>
+                    <li><a href="../../index.html">SALIR</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <main>
+            <div id="food-container">
+                <h1>Comida</h1>
+                <div>
+                    <section class="part-1">
+                        <label id="customButton" for="selectImageButton">Subir Imagen</label>
+                        <input type="file" id="selectImageButton" accept="image/*">
+                        <span id="fileName">Ningún archivo seleccionado</span>
+                    </section>
+                    <section>
+                        <img id="selectedImage" style="display:none;" />
+                        <div id="result-food">
+                            <canvas id="canvas" width="400" height="300" style="display:none;"></canvas>
+                            <article id="result"></article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <script src="../js/food.js"></script>
+
+    </div>
+</body>
+</html>

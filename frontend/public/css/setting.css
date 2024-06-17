@@ -1,0 +1,46 @@
+#contenido-setting {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+input {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+button {
+    font-size: 1.5rem;
+    background-color: #3498db;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    border: #3498db 2px solid;
+}
+
+button:hover {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #3498db;
+}
+
+h1 {
+    margin: 0;
+}
+
+.row-setting {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3498db;
+}

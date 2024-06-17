@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Colesterol</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <script src="../js/inicio.js"></script>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <div id="contenido">
+        <div id="menu-principal">
+            <div id="titulo-principal">
+                <h1>Cholesterol</h1>
+                <h1>Explorer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html" id="activado">INICIO</a></li>
+                    <li><a href="predict.html">PREDECIR</a></li>
+                    <li><a href="information.html">INFORMACION</a></li>
+                    <li><a href="food.html">COMIDA</a></li>
+                    <li><a href="assistant.html">ASISTENTE</a></li>
+                    <li><a href="setting.html">AJUSTES</a></li>
+                    <li><a href="../../index.html" id="logout">SALIR</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div>
+                <h1>Perfil</h1>
+                <div id="contenido-informacion">
+                    <div id="columna-1">
+                        <div id="perfil">
+                            <div>
+                                <p>Nombre: <span id="profileName"></span></p>
+                                <p>Edad: <span id="profileAge"></span></p>
+                            </div>
+                            <div>
+                                <p>Genero: <span id="profileGender"></span></p>
+                                <p>Alergias: <span id="profileAllergies"></span></p>
+                            </div>
+                        </div>
+                        <div class="health-metrics">
+                            <h2>Métricas de Progreso de Salud</h2>
+                            <canvas id="healthChart"></canvas>
+                        </div>
+                    </div>
+                    <div id="columna-2">
+                        <div class="summary">
+                            <h2>Objetivo</h2>
+                            <span id="profileHealthGoal"></span>
+                        </div>
+                        <div class="goals">
+                            <h2>Rutina</h2>
+                            <ul id="goalsList"></ul>
+                        </div>
+                        <div class="diet">
+                            <h2>Dieta</h2>
+                            <ul id="profileDiet"></ul>
+                        </div>
+                        <div class="estado-actual">
+                            <h2>Estado actual</h2>
+                            <section>
+                                <article>
+                                    <img src="../img/icons-person.png" alt="">
+                                </article>
+                                <article>
+                                    <p>Altura: <span id="profileHeight"></span></p>
+                                    <p>Peso: <span id="profileWeight"></span></p>
+                                </article>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,3 +1,16 @@
 Flask
 flask_cors
 google-generativeai
+face_recognition
+io
+base64
+PIL
+json
+dash
+pandas
+plotly
+numpy
+PyPDF2
+logging
+tensorflow
+Pillow

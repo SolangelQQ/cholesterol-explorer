@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Colesterol</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+
+    <script src="../js/assistant.js"></script>
+    <link rel="stylesheet" href="../css/assistant.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/default.css">
+    
+</head>
+<body>
+
+    <div id="contenido">
+
+        <div id="menu-principal">
+            <div id="titulo-principal">
+                <h1>Cholesterol</h1>
+                <h1>Explorer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">INICIO</a></li>
+                    <li><a href="predict.html">PREDECIR</a></li>
+                    <li><a href="information.html">INFORMACION</a></li>
+                    <li><a href="food.html">COMIDA</a></li>
+                    <li><a href="assistant.html" id="activado">ASISTENTE</a></li>
+                    <li><a href="setting.html">AJUSTES</a></li>
+                    <li><a href="../../index.html">SALIR</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    
+        <main>    
+            <div id="contenido-asistente">
+                <h1>ChatBot</h1>
+                <div id="messages" class="chat-container"></div>
+                <div id="inputArea">
+                    <input type="text" id="userInput" placeholder="Escribe un mensaje...">
+                    <button id="sendButton" onclick="sendMessage()">Enviar</button>
+                </div>
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>

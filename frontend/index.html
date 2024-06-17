@@ -3,70 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Colesterol</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
-    <script src="js/app.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="src/pages/inicio/styles.css">
-    <link rel="stylesheet" href="src/componentes/menu-principal.css">
-    <script src="src/pages/inicio/inicio.js"></script>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- <header>
-        <h1>Calculadora de Predicción de Colesterol</h1>
-    </header> -->
-    
-    <div id="contenido">
 
-        <div id="menu-principal">
-            <div id="titulo-principal">
-                <h1>Cholesterol</h1>
-                <h1>Explorer</h1>
-            </div>
-            <nav>
-                <ul>
-                    <a href="index.html" id="activado"><li>INICIO</li></a>
-                    <li><a href="src/pages/predecir/predecir.html">PREDECIR</a></li>
-                    <li><a href="">INFORMACION</a></li>
-                    <li><a href="src/pages/comida/comida.html">COMIDA</a></li>
-                    <li><a href="src/pages/chatbot/chatbot.html">CHATBOT</a></li>
-                    <li><a href="">AJUSTES</a></li>
-                </ul>
-            </nav>
+    <main>
+
+        <div class="login">
+
+            <section>
+            
+                <form action="" id="login-form">
+                    
+                    <h1>Ingresa con tu cuenta</h1>
+                    <input type="text" placeholder="Usuario" id="username">
+                    <input type="text" placeholder="Contraseña" id="password">
+
+                    <div class="botones">
+
+                        <button type="submit">Iniciar sesion</button>
+                        <button type="click">Registrarse</button>
+
+                    </div>
+
+                </form>
+    
+            </section>
+
+
+            <section class="bienvenido">
+
+                <h1>¡Bienvenido a Explorer Cholesterol!</h1>
+                <p>Explora nuesto asistente personalizado, escanea tus comidas para conocer sus beneficios y mantén un seguimiento de tu progreso personal. Todo en un solo lugar, ¡y con un solo clic!</p>
+
+            </section>
 
         </div>
+
+    </main>
+
+    <script src="public/js/login.js"></script>
     
-        <main>
-            <div>
-
-                <h1>Perfil</h1>
-    
-                <div id="contenido-informacion">
-                    <div id="columna-1">
-                        <div id="perfil">
-                            
-                        </div>
-                        <div class="health-metrics">
-                            <h2>Métricas de Progreso de Salud</h2>
-                            <canvas id="healthChart"></canvas>
-                        </div>
-                    </div>
-                    <div id="columna-2">
-                        <div class="summary">
-                            <h2>Resumen del Paciente</h2>
-                        </div>
-                        <div class="goals">
-                            <h2>Metas del Paciente</h2>
-                            <ul>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </main>
-
-    </div>
 </body>
 </html>
-

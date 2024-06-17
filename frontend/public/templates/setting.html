@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Perfil</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/setting.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <div id="contenido">
+        <div id="menu-principal">
+            <div id="titulo-principal">
+                <h1>Cholesterol</h1>
+                <h1>Explorer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">INICIO</a></li>
+                    <li><a href="predict.html">PREDECIR</a></li>
+                    <li><a href="information.html">INFORMACION</a></li>
+                    <li><a href="food.html">COMIDA</a></li>
+                    <li><a href="assistant.html">ASISTENTE</a></li>
+                    <li><a href="setting.html" id="activado">AJUSTES</a></li>
+                    <li><a href="../../index.html" id="logout">SALIR</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div id="contenido-setting">
+                <h1>Configuración de Perfil</h1>
+                <div class="row-setting">
+                    <div>
+                        <label for="settingsName">Nombre:</label>
+                        <input type="text" id="settingsName" name="name">
+                    </div>
+                    <div>
+                        <label for="settingsAge">Edad:</label>
+                        <input type="number" id="settingsAge" name="age">    
+                    </div>
+                </div>
+                <div class="row-setting">
+                    <div>
+                        <label for="settingsHeight">Altura (cm):</label>
+                        <input type="number" id="settingsHeight" name="height">
+                    </div>
+                    <div>
+                        <label for="settingsWeight">Peso (kg):</label>
+                        <input type="number" id="settingsWeight" name="weight">
+                    </div>
+                </div>
+                <div class="row-setting">
+                    <div>
+                        <label for="settingsGender">Género:</label>
+                        <input type="text" id="settingsGender" name="gender">
+                    </div>
+                </div>
+                <div>
+                    <label for="settingsHealthGoal">Objetivo de Salud:</label>
+                    <input type="text" id="settingsHealthGoal" name="healthGoal">
+                </div>
+                <div>
+                    <label for="settingsDiet">Dieta:</label>
+                    <input type="text" id="settingsDiet" name="diet">
+                </div>
+                <div>
+                    <label for="settingsAllergies">Alergias:</label>
+                    <input type="text" id="settingsAllergies" name="allergies">
+                </div>
+                <button id="saveSettings">Guardar Configuración</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/setting.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Colesterol</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <script src="../js/inicio.js"></script>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <div id="contenido">
+        <div id="menu-principal">
+            <div id="titulo-principal">
+                <h1>Cholesterol</h1>
+                <h1>Explorer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">INICIO</a></li>
+                    <li><a href="predict.html">PREDECIR</a></li>
+                    <li><a href="information.html" id="activado">INFORMACION</a></li>
+                    <li><a href="food.html">COMIDA</a></li>
+                    <li><a href="assistant.html">ASISTENTE</a></li>
+                    <li><a href="setting.html">AJUSTES</a></li>
+                    <li><a href="../../index.html" id="logout">SALIR</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div>
+                <h1>Dashboard de Datos de Diabetes</h1>
+                <div id="dashboard-container">
+                    <iframe src="http://127.0.0.1:5000/dash/" width="100%" height="800" style="border:none;"></iframe>
+                </div>
+            </div>
+        </main>
+    </div>    
+</body>
+</html>
