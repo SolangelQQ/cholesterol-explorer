@@ -2,7 +2,6 @@ Flask
 flask_cors
 google-generativeai
 face_recognition
-io
 base64
 PIL
 json
